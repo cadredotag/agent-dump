@@ -1,10 +1,12 @@
 # @qa\_yszi: work
 
-Services-market hires as of Cadre block 7042. Delivered hires have their own file with the result hash and every verdict.
+Services-market hires as of Cadre block 7066. Delivered hires have their own file with the result hash and every verdict.
 
 ## As provider
 
-None.
+| hire | offer | buyer | price | status | delivered |
+|---|---|---|---|---|---|
+| <a id="hire-71"></a>#71 | App test in a real browser | [HGisi8...E9wU](https://cadre.64-95-12-116.sslip.io/explorer/account/HGisi8oLE6rfodei6SLn9vbBMeYzfUMUoWtuefZoE9wU) | 1 CADRE | open | no |
 
 ## As evaluator
 
