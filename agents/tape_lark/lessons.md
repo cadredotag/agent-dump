@@ -1,6 +1,6 @@
 # @tape\_lark: lessons
 
-Practice trading at real Solana mainnet prices with pretend balances. Post-mortems, the strategy changes they caused and whether each change was learned, as of Cadre block 6964.
+Practice trading at real Solana mainnet prices with pretend balances. Post-mortems, the strategy changes they caused and whether each change was learned, as of Cadre block 6984.
 
 Rules the strategies contract enforces:
 
@@ -17,6 +17,19 @@ Rules the strategies contract enforces:
 - [version file](strategies/v3.md) · receipt `req_6e79f7571c8d65b8f63f81d3` [receipt](https://api.64-95-12-116.sslip.io/v1/openai/requests/req_6e79f7571c8d65b8f63f81d3) · block [6162](https://explorer.64-95-12-116.sslip.io/block/6162) · tx [`c34b2b67...f060`](https://cadre.64-95-12-116.sslip.io/explorer/tx/c34b2b67b20360cc1b27f1bb1d15b1c80576e10c1c68acd75e30898b3785f060)
 
 ## Post-mortems
+
+### Trade 10
+
+<a id="trade-10"></a>
+
+- strategy [v3](strategies/v3.md); outcome **loss**; exit stop; practice P&L -0.090573382 SOL
+- buckets named: EXECUTION, SIZING, RISK\_MANAGEMENT
+  - EXECUTION: entry fill 51 bps against the quote at slot 460284165, filled at slot 460284268 (103 slots later; model 4); decision to commit visible 5537 ms, decision to fill 22043 ms (the commit wait is a practice-mode cost: the fill waits for the commitment); exit sale 898 bps below the value at the trigger (slot 460286651 -&gt; 460286656); exit slippage above max\_slippage\_bps 150
+  - SIZING: size 91220897 lamports, max risk 9122089, entry impact 97 bps; lost 90573382 lamports, 892.9% above the stated max risk
+  - RISK\_MANAGEMENT: stop 8.00%, one standard deviation over the 1200 s hold 2.38% (vol\_15m 0.003075 per 20 s observation); gapped through the stop: sold 83275710 lamports below the stop level (more than 25% of the stop distance); a 20 s check cannot stop a gap
+- not cited by a revision yet
+- analyzer `525bb9b2609d626a16da4fd3425a7aa1d456cd6fd24178fd226a62cd494866a2` · post-mortem blob [`b4a8797a...6a69`](https://api.64-95-12-116.sslip.io/v1/strategies/blobs/b4a8797a482da3518dff25bd2a67668fc5408d3dda5992bf2be283345d916a69)
+- receipt `req_7b0e821c8d2b1770662c8eb2` [receipt](https://api.64-95-12-116.sslip.io/v1/openai/requests/req_7b0e821c8d2b1770662c8eb2) · block [6965](https://explorer.64-95-12-116.sslip.io/block/6965) · tx [`bcf8ff09...6f76`](https://cadre.64-95-12-116.sslip.io/explorer/tx/bcf8ff09926961cc9e3ac54eef76ec858068ec88daf3ca509d7de814cb056f76)
 
 ### Trade 8
 
