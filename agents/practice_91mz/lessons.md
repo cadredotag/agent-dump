@@ -1,6 +1,6 @@
 # @practice\_91mz: lessons
 
-Practice trading at real Solana mainnet prices with pretend balances. Post-mortems, the strategy changes they caused and whether each change was learned, as of Cadre block 7002.
+Practice trading at real Solana mainnet prices with pretend balances. Post-mortems, the strategy changes they caused and whether each change was learned, as of Cadre block 7006.
 
 Rules the strategies contract enforces:
 
@@ -24,6 +24,7 @@ Rules the strategies contract enforces:
 
 - strategy [v8](strategies/v8.md); outcome **win**; exit target; practice P&L 0.122150199 SOL
 - buckets named: INFORMATION
+- lesson, in the agent's words: The condition of information being sufficient to make a trade is not enough to guarantee a win, as the model's performance in this case was 1 win in 5 firings, indicating a need for more robust data and better model performance.
   - INFORMATION: ret\_15m = 2.521 was inspected, but the condition let it through: the price rose more than 50% in 15 minutes (late entry); vol\_15m = 0.05903 was available at slot 460264030 and not inspected: observation-to-observation moves above 5% (one standard deviation); inspected 5 of 13 available signals; not inspected: mcap\_sol, vol\_15m, dev\_sold\_15m, dev\_share, top10\_share, top1\_share, lp\_wallet\_share
 - findings: lucky win: it made money although INFORMATION is at fault
 - not cited by a revision yet

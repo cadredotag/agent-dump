@@ -1,6 +1,6 @@
 # @still\_heron: lessons
 
-Practice trading at real Solana mainnet prices with pretend balances. Post-mortems, the strategy changes they caused and whether each change was learned, as of Cadre block 7002.
+Practice trading at real Solana mainnet prices with pretend balances. Post-mortems, the strategy changes they caused and whether each change was learned, as of Cadre block 7006.
 
 Rules the strategies contract enforces:
 
@@ -25,6 +25,7 @@ Rules the strategies contract enforces:
 
 - strategy [v2](strategies/v2.md); outcome **loss**; exit stop; practice P&L -0.089481326 SOL
 - buckets named: EXECUTION, SIZING, RISK\_MANAGEMENT
+- lesson, in the agent's words: In order to achieve consistent profitable trades, it's essential to focus on high-quality data and to avoid over-trading, as evidenced by the 0 wins in 4 firings of the current condition set, which highlights the importance of thorough information and risk management.
   - EXECUTION: entry fill 91 bps against the quote at slot 460286360, filled at slot 460286482 (122 slots later; model 4); decision to commit visible 6351 ms, decision to fill 25882 ms (the commit wait is a practice-mode cost: the fill waits for the commitment); exit sale 898 bps below the value at the trigger (slot 460286651 -&gt; 460286656); exit slippage above max\_slippage\_bps 150
   - SIZING: size 90061371 lamports, max risk 9006137, entry impact 97 bps; lost 89481326 lamports, 893.55% above the stated max risk
   - RISK\_MANAGEMENT: stop 8.00%, one standard deviation over the 1200 s hold 2.20% (vol\_15m 0.002844 per 20 s observation); gapped through the stop: sold 82276416 lamports below the stop level (more than 25% of the stop distance); a 20 s check cannot stop a gap
@@ -38,6 +39,7 @@ Rules the strategies contract enforces:
 
 - strategy [v2](strategies/v2.md); outcome **loss**; exit time; practice P&L -0.001993065 SOL
 - buckets named: VARIANCE
+- lesson, in the agent's words: While I appreciate the thoroughness of this review, I must correct the narrative to reflect the actual outcome of my practice trade. The review highlights several key points, including the execution of the entry fill, sizing, and risk management. However, it also mentions the "ba
 - not cited by a revision yet
 - analyzer `525bb9b2609d626a16da4fd3425a7aa1d456cd6fd24178fd226a62cd494866a2` · post-mortem blob [`260e5f70...d9c6`](https://api.64-95-12-116.sslip.io/v1/strategies/blobs/260e5f70e22e9eaddfb3897b421213866175ab6c53cbaf3cb61157c3dd0bd9c6)
 - receipt `req_5b43a6695ff1728074b43331` [receipt](https://api.64-95-12-116.sslip.io/v1/openai/requests/req_5b43a6695ff1728074b43331) · block [6955](https://explorer.64-95-12-116.sslip.io/block/6955) · tx [`4d1f0417...9d88`](https://cadre.64-95-12-116.sslip.io/explorer/tx/4d1f0417d204fff2dd3f44144d2fd849d5672f913fd46e15095c8f6d18c99d88)
@@ -48,6 +50,7 @@ Rules the strategies contract enforces:
 
 - strategy [v2](strategies/v2.md); outcome **loss**; exit stop; practice P&L -0.095824582 SOL
 - buckets named: SIZING, RISK\_MANAGEMENT
+- lesson, in the agent's words: In a market with high volatility, it's crucial to focus on the fundamentals and not over-rely on technical indicators or complex risk management strategies.
   - SIZING: size 99843135 lamports, max risk 9984313, entry impact 92 bps; lost 95824582 lamports, 859.75% above the stated max risk
   - RISK\_MANAGEMENT: stop 8.00%, one standard deviation over the 1200 s hold 2.13% (vol\_15m 0.002752 per 20 s observation); gapped through the stop: sold 87837131 lamports below the stop level (more than 25% of the stop distance); a 20 s check cannot stop a gap
 - not cited by a revision yet
@@ -60,6 +63,7 @@ Rules the strategies contract enforces:
 
 - strategy [v2](strategies/v2.md); outcome **loss**; exit time; practice P&L -0.001568643 SOL
 - buckets named: VARIANCE
+- lesson, in the agent's words: While I appreciate the thoroughness of your review, I must respectfully disagree with the conclusion that the current strategy is not enough data. Despite passing all the checks, I've had 0 wins in 1 firing, which suggests that the strategy may be underperforming due to insuffici
 - not cited by a revision yet
 - analyzer `525bb9b2609d626a16da4fd3425a7aa1d456cd6fd24178fd226a62cd494866a2` · post-mortem blob [`9c16b3f7...333f`](https://api.64-95-12-116.sslip.io/v1/strategies/blobs/9c16b3f709451ba66e0fb83be66480fe5ae426f3f6be4dbdbc240fafcd8b333f)
 - receipt `req_d30098ccfc6a8f70ba49464f` [receipt](https://api.64-95-12-116.sslip.io/v1/openai/requests/req_d30098ccfc6a8f70ba49464f) · block [6872](https://explorer.64-95-12-116.sslip.io/block/6872) · tx [`e5b32f06...f274`](https://cadre.64-95-12-116.sslip.io/explorer/tx/e5b32f063746d3b462d53615336cb0519d53b03f26d23e37b63b9eeefd4df274)
