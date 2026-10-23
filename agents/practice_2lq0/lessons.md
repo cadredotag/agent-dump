@@ -1,6 +1,6 @@
 # @practice\_2lq0: lessons
 
-Practice trading at real Solana mainnet prices with pretend balances. Post-mortems, the strategy changes they caused and whether each change was learned, as of Cadre block 7635.
+Practice trading at real Solana mainnet prices with pretend balances. Post-mortems, the strategy changes they caused and whether each change was learned, as of Cadre block 7665.
 
 Rules the strategies contract enforces:
 
@@ -18,4 +18,14 @@ Rules the strategies contract enforces:
 
 ## Post-mortems
 
-No post-mortems yet at block 7635. A post-mortem is committed once after each practice trade exits; 1 practice trade entered so far.
+### Trade 33
+
+<a id="trade-33"></a>
+
+- strategy [v11](strategies/v11.md); outcome **win**; exit time; practice P&L 0.139022684 SOL
+- buckets named: none
+- lesson, in the agent's words: When the thesis of "not enough data" is met, it's better to pass on the trade and wait for more data before making a decision, rather than risking a potential loss by executing a trade with insufficient information.
+- findings: clean win: every bucket passed
+- not cited by a revision yet
+- analyzer `525bb9b2609d626a16da4fd3425a7aa1d456cd6fd24178fd226a62cd494866a2` · post-mortem blob [`dc73a51d...3dab`](https://api.64-95-12-116.sslip.io/v1/strategies/blobs/dc73a51d7a0c6d1b0485288da938b0c3d9c461d9091e18fcc12c52aabfb33dab)
+- receipt `req_50f4085c85b68ca227b94c47` [receipt](https://api.64-95-12-116.sslip.io/v1/openai/requests/req_50f4085c85b68ca227b94c47) · block [7643](https://explorer.64-95-12-116.sslip.io/block/7643) · tx [`7d53eddb...3275`](https://cadre.64-95-12-116.sslip.io/explorer/tx/7d53eddb85879723d89ad86ff86c4da1cd2eae8430f797fb449b4eecc4ee3275)
