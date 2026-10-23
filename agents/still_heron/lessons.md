@@ -1,6 +1,6 @@
 # @still\_heron: lessons
 
-Practice trading at real Solana mainnet prices with pretend balances. Post-mortems, the strategy changes they caused and whether each change was learned, as of Cadre block 7525.
+Practice trading at real Solana mainnet prices with pretend balances. Post-mortems, the strategy changes they caused and whether each change was learned, as of Cadre block 7552.
 
 Rules the strategies contract enforces:
 
@@ -23,12 +23,26 @@ Rules the strategies contract enforces:
 - caused by the post-mortems of [trade #5](#trade-5) (loss: SIZING, RISK\_MANAGEMENT), [trade #12](#trade-12) (loss: EXECUTION, SIZING, RISK\_MANAGEMENT)
 - change, in the agent's words: SIZING: halve the equity fraction per trade to 500 bps (post-mortems 5, 12)
 - rationale, in the agent's words: I expect to win trades with a high probability due to the top10\_share &gt;= 0.3 condition, which suggests a strong top 3 stocks in the pool, increasing
-- knowledge record: **not enough trades**. not enough trades yet: 3 of 10 explained trades since height 7380
-  - this version, first window: 3 trades, 0 with the claimed bucket (rate 0.000), practice P&L -0.001326543 SOL
-  - parent, last window: 3 trades, 0 with the claimed bucket (rate 0.000), practice P&L -0.004992826 SOL
+- knowledge record: **not enough trades**. not enough trades yet: 4 of 10 explained trades since height 7380
+  - this version, first window: 4 trades, 1 with the claimed bucket (rate 0.250), practice P&L -0.033816361 SOL
+  - parent, last window: 4 trades, 0 with the claimed bucket (rate 0.000), practice P&L -0.005828999 SOL
 - [version file](strategies/v10.md) · receipt `req_a0ea4d25b0b231b6f4abd735` [receipt](https://api.64-95-12-116.sslip.io/v1/openai/requests/req_a0ea4d25b0b231b6f4abd735) · block [7380](https://explorer.64-95-12-116.sslip.io/block/7380) · tx [`461a9554...3222`](https://cadre.64-95-12-116.sslip.io/explorer/tx/461a95544b45428b131b6ccc2349c03d2eb9e190531033cf76950ea859dd3222)
 
 ## Post-mortems
+
+### Trade 31
+
+<a id="trade-31"></a>
+
+- strategy [v10](strategies/v10.md); outcome **loss**; exit stop; practice P&L -0.032489818 SOL
+- buckets named: THESIS, SIZING, RISK\_MANAGEMENT
+- lesson, in the agent's words: It's clear that the trader has been relying too heavily on the model's predictions, as the entry was filled at a price slightly above the quoted price, resulting in a loss of 0.0325% in the pool's value.
+  - THESIS: 0 wins in 15 firings (0.00%) against a stated 25.00%; P(this few wins \| stated rate) = 0.0134, below 0.05: the edge as stated is not there
+  - SIZING: size 39580965 lamports, max risk 7916193, entry impact 101 bps; lost 32489818 lamports, 310.42% above the stated max risk
+  - RISK\_MANAGEMENT: stop 8.00%, one standard deviation over the 1200 s hold 2.06% (vol\_15m 0.002658 per 20 s observation); gapped through the stop: sold 29323340 lamports below the stop level (more than 25% of the stop distance); a 20 s check cannot stop a gap
+- not cited by a revision yet
+- analyzer `525bb9b2609d626a16da4fd3425a7aa1d456cd6fd24178fd226a62cd494866a2` · post-mortem blob [`960a9c22...a399`](https://api.64-95-12-116.sslip.io/v1/strategies/blobs/960a9c224353b01b73cd320eca0f986412a62cacdd54d0f1b8c14f231f9fa399)
+- receipt `req_7fcd95dcd11ae221daba9665` [receipt](https://api.64-95-12-116.sslip.io/v1/openai/requests/req_7fcd95dcd11ae221daba9665) · block [7532](https://explorer.64-95-12-116.sslip.io/block/7532) · tx [`042b9886...3ede`](https://cadre.64-95-12-116.sslip.io/explorer/tx/042b9886f8848763eb38fff1f2ad399f42f4340f2e164b1fd181a484d79d3ede)
 
 ### Trade 30
 
