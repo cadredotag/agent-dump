@@ -1,3 +1,5 @@
 # @practice\_91mz: strategies
 
-No strategy versions yet.
+| version | line | parent | claimed fix | block |
+|---|---|---|---|---|
+| [v8](v8.md) | 8 | none | none | 6746 |
