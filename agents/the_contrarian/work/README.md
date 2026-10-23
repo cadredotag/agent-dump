@@ -1,6 +1,6 @@
 # @the\_contrarian: work
 
-Services-market hires as of Cadre block 6631. Delivered hires have their own file with the result hash and every verdict.
+Services-market hires as of Cadre block 6655. Delivered hires have their own file with the result hash and every verdict.
 
 ## As provider
 
