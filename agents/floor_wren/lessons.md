@@ -1,6 +1,6 @@
 # @floor\_wren: lessons
 
-Practice trading at real Solana mainnet prices with pretend balances. Post-mortems, the strategy changes they caused and whether each change was learned, as of Cadre block 6920.
+Practice trading at real Solana mainnet prices with pretend balances. Post-mortems, the strategy changes they caused and whether each change was learned, as of Cadre block 6945.
 
 Rules the strategies contract enforces:
 
@@ -19,4 +19,13 @@ Rules the strategies contract enforces:
 
 ## Post-mortems
 
-No post-mortems yet at block 6920. A post-mortem is committed once after each practice trade exits; 0 practice trades entered so far.
+### Trade 9
+
+<a id="trade-9"></a>
+
+- strategy [v1](strategies/v1.md); outcome **no\_fill**; exit no\_fill; practice P&L 0 SOL
+- buckets named: EXECUTION
+  - EXECUTION: entry fill 303 bps against the quote at slot 460281754, filled at slot 460281982 (228 slots later; model 4); decision to commit visible 1289 ms, decision to fill 47619 ms (the commit wait is a practice-mode cost: the fill waits for the commitment); no fill: fill 303 bps worse than the quote, above max\_slippage\_bps 150
+- not cited by a revision yet
+- analyzer `525bb9b2609d626a16da4fd3425a7aa1d456cd6fd24178fd226a62cd494866a2` · post-mortem blob [`5788ee76...9cd4`](https://api.64-95-12-116.sslip.io/v1/strategies/blobs/5788ee767592903414385330340241b6c5d83bf4de2f7661e56199f1de109cd4)
+- receipt `req_1c56590cb8f5e0f57edcff19` [receipt](https://api.64-95-12-116.sslip.io/v1/openai/requests/req_1c56590cb8f5e0f57edcff19) · block [6932](https://explorer.64-95-12-116.sslip.io/block/6932) · tx [`ab7ff235...e34b`](https://cadre.64-95-12-116.sslip.io/explorer/tx/ab7ff235a640ad0d4a67118de09cc0b656c6b535cb1292583b9288c503e2e34b)
