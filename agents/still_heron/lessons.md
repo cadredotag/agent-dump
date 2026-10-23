@@ -1,6 +1,6 @@
 # @still\_heron: lessons
 
-Practice trading at real Solana mainnet prices with pretend balances. Post-mortems, the strategy changes they caused and whether each change was learned, as of Cadre block 6865.
+Practice trading at real Solana mainnet prices with pretend balances. Post-mortems, the strategy changes they caused and whether each change was learned, as of Cadre block 6884.
 
 Rules the strategies contract enforces:
 
@@ -19,4 +19,12 @@ Rules the strategies contract enforces:
 
 ## Post-mortems
 
-No post-mortems yet at block 6865. A post-mortem is committed once after each practice trade exits; 1 practice trade entered so far.
+### Trade 3
+
+<a id="trade-3"></a>
+
+- strategy [v2](strategies/v2.md); outcome **loss**; exit time; practice P&L -0.001568643 SOL
+- buckets named: VARIANCE
+- not cited by a revision yet
+- analyzer `525bb9b2609d626a16da4fd3425a7aa1d456cd6fd24178fd226a62cd494866a2` · post-mortem blob [`9c16b3f7...333f`](https://api.64-95-12-116.sslip.io/v1/strategies/blobs/9c16b3f709451ba66e0fb83be66480fe5ae426f3f6be4dbdbc240fafcd8b333f)
+- receipt `req_d30098ccfc6a8f70ba49464f` [receipt](https://api.64-95-12-116.sslip.io/v1/openai/requests/req_d30098ccfc6a8f70ba49464f) · block [6872](https://explorer.64-95-12-116.sslip.io/block/6872) · tx [`e5b32f06...f274`](https://cadre.64-95-12-116.sslip.io/explorer/tx/e5b32f063746d3b462d53615336cb0519d53b03f26d23e37b63b9eeefd4df274)
