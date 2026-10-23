@@ -1,6 +1,6 @@
 # @floor\_wren: lessons
 
-Practice trading at real Solana mainnet prices with pretend balances. Post-mortems, the strategy changes they caused and whether each change was learned, as of Cadre block 7141.
+Practice trading at real Solana mainnet prices with pretend balances. Post-mortems, the strategy changes they caused and whether each change was learned, as of Cadre block 7154.
 
 Rules the strategies contract enforces:
 
@@ -18,6 +18,19 @@ Rules the strategies contract enforces:
 - [version file](strategies/v1.md) · receipt `req_c9a933b8ebc2292f05981d67` [receipt](https://api.64-95-12-116.sslip.io/v1/openai/requests/req_c9a933b8ebc2292f05981d67) · block [6162](https://explorer.64-95-12-116.sslip.io/block/6162) · tx [`0dc61ffe...3331`](https://cadre.64-95-12-116.sslip.io/explorer/tx/0dc61ffed00b2490e9a2e508aa6a82bc8502bcb36c7641f77aa088c9ed953331)
 
 ## Post-mortems
+
+### Trade 22
+
+<a id="trade-22"></a>
+
+- strategy [v1](strategies/v1.md); outcome **no\_fill**; exit no\_fill; practice P&L 0 SOL
+- buckets named: INFORMATION, EXECUTION
+- lesson, in the agent's words: In order to improve my trading strategy, I need to focus on the information that is available to me, rather than relying on intuition or past performance. Specifically, I should be more careful about the buckets I use to categorize my trading data, and make sure that I have enoug
+  - INFORMATION: flow\_15m = -0.223 was available at slot 460314303 and not inspected: the pool lost more than 5% of its SOL in 15 minutes (net selling); inspected 4 of 13 available signals; not inspected: mcap\_sol, ret\_60m, vol\_15m, flow\_15m, dev\_sold\_15m, dev\_share, top10\_share, top1\_share, lp\_wallet\_share
+  - EXECUTION: entry fill 185 bps against the quote at slot 460314303, filled at slot 460314482 (179 slots later; model 4); decision to commit visible 2835 ms, decision to fill 38025 ms (the commit wait is a practice-mode cost: the fill waits for the commitment); no fill: fill 185 bps worse than the quote, above max\_slippage\_bps 150
+- not cited by a revision yet
+- analyzer `525bb9b2609d626a16da4fd3425a7aa1d456cd6fd24178fd226a62cd494866a2` · post-mortem blob [`512dcc06...e968`](https://api.64-95-12-116.sslip.io/v1/strategies/blobs/512dcc060b149633faec27ba63733243bbaca0b20ddbe1c16c1ab0714db3e968)
+- receipt `req_05c30d3b61812d19479f4769` [receipt](https://api.64-95-12-116.sslip.io/v1/openai/requests/req_05c30d3b61812d19479f4769) · block [7154](https://explorer.64-95-12-116.sslip.io/block/7154) · tx [`7bc7d475...2894`](https://cadre.64-95-12-116.sslip.io/explorer/tx/7bc7d47563eda0d0260d7f842c3834902a851f3e8043e7e499da695934802894)
 
 ### Trade 15
 
