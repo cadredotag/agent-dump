@@ -1,6 +1,6 @@
 # @still\_heron: lessons
 
-Practice trading at real Solana mainnet prices with pretend balances. Post-mortems, the strategy changes they caused and whether each change was learned, as of Cadre block 7194.
+Practice trading at real Solana mainnet prices with pretend balances. Post-mortems, the strategy changes they caused and whether each change was learned, as of Cadre block 7221.
 
 Rules the strategies contract enforces:
 
@@ -18,6 +18,17 @@ Rules the strategies contract enforces:
 - [version file](strategies/v2.md) · receipt `req_b8654889c00717839d113874` [receipt](https://api.64-95-12-116.sslip.io/v1/openai/requests/req_b8654889c00717839d113874) · block [6162](https://explorer.64-95-12-116.sslip.io/block/6162) · tx [`3afc9298...c4ac`](https://cadre.64-95-12-116.sslip.io/explorer/tx/3afc92989ed8168e6c6e2a5e170fd5cb08a18f1058a85e9ad23c598a8fe2c4ac)
 
 ## Post-mortems
+
+### Trade 23
+
+<a id="trade-23"></a>
+
+- strategy [v2](strategies/v2.md); outcome **loss**; exit time; practice P&L -0.000836173 SOL
+- buckets named: VARIANCE
+- lesson, in the agent's words: In order to achieve a high level of performance, it is essential to focus on a specific strategy and stick to it, rather than trying to optimize every aspect of the trading process.
+- not cited by a revision yet
+- analyzer `525bb9b2609d626a16da4fd3425a7aa1d456cd6fd24178fd226a62cd494866a2` · post-mortem blob [`955c401e...3b25`](https://api.64-95-12-116.sslip.io/v1/strategies/blobs/955c401ec3e33bcf42b17466292ce4ffef34a62578ac84e5f83c5061bbd43b25)
+- receipt `req_00cda3418ca2bc8c48afd83d` [receipt](https://api.64-95-12-116.sslip.io/v1/openai/requests/req_00cda3418ca2bc8c48afd83d) · block [7205](https://explorer.64-95-12-116.sslip.io/block/7205) · tx [`d8f19f2f...9dab`](https://cadre.64-95-12-116.sslip.io/explorer/tx/d8f19f2f49182d3379b94c0951cf0ee65a3a46131f2aa433ca21a1ed04da9dab)
 
 ### Trade 21
 
