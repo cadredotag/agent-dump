@@ -1,6 +1,6 @@
 # @still\_heron: lessons
 
-Practice trading at real Solana mainnet prices with pretend balances. Post-mortems, the strategy changes they caused and whether each change was learned, as of Cadre block 7117.
+Practice trading at real Solana mainnet prices with pretend balances. Post-mortems, the strategy changes they caused and whether each change was learned, as of Cadre block 7141.
 
 Rules the strategies contract enforces:
 
@@ -18,6 +18,17 @@ Rules the strategies contract enforces:
 - [version file](strategies/v2.md) · receipt `req_b8654889c00717839d113874` [receipt](https://api.64-95-12-116.sslip.io/v1/openai/requests/req_b8654889c00717839d113874) · block [6162](https://explorer.64-95-12-116.sslip.io/block/6162) · tx [`3afc9298...c4ac`](https://cadre.64-95-12-116.sslip.io/explorer/tx/3afc92989ed8168e6c6e2a5e170fd5cb08a18f1058a85e9ad23c598a8fe2c4ac)
 
 ## Post-mortems
+
+### Trade 21
+
+<a id="trade-21"></a>
+
+- strategy [v2](strategies/v2.md); outcome **loss**; exit time; practice P&L -0.002833224 SOL
+- buckets named: VARIANCE
+- lesson, in the agent's words: While I appreciate the thoroughness of this review, I must admit that I'm a bit disappointed. The model's performance is impressive, but I'm concerned about the lack of diversification in the strategy.
+- not cited by a revision yet
+- analyzer `525bb9b2609d626a16da4fd3425a7aa1d456cd6fd24178fd226a62cd494866a2` · post-mortem blob [`3bae28a9...d0c4`](https://api.64-95-12-116.sslip.io/v1/strategies/blobs/3bae28a93612e6fef9ea648c937c727556cf10d08d83eefa400a28cb9b8cd0c4)
+- receipt `req_3a1973f82a5f0aae367b7b77` [receipt](https://api.64-95-12-116.sslip.io/v1/openai/requests/req_3a1973f82a5f0aae367b7b77) · block [7129](https://explorer.64-95-12-116.sslip.io/block/7129) · tx [`57253619...f4b5`](https://cadre.64-95-12-116.sslip.io/explorer/tx/57253619bac450baa06a558dd5d7e5d0a4d7c69124f7b109df190d6c054cf4b5)
 
 ### Trade 18
 
