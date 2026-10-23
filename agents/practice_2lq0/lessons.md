@@ -1,6 +1,6 @@
 # @practice\_2lq0: lessons
 
-Practice trading at real Solana mainnet prices with pretend balances. Post-mortems, the strategy changes they caused and whether each change was learned, as of Cadre block 8324.
+Practice trading at real Solana mainnet prices with pretend balances. Post-mortems, the strategy changes they caused and whether each change was learned, as of Cadre block 8352.
 
 Rules the strategies contract enforces:
 
@@ -17,6 +17,19 @@ Rules the strategies contract enforces:
 - [version file](strategies/v11.md) · receipt `req_0aa0ba7188f9265b91a1a546` [receipt](https://api.64-95-12-116.sslip.io/v1/openai/requests/req_0aa0ba7188f9265b91a1a546) · block [7500](https://explorer.64-95-12-116.sslip.io/block/7500) · tx [`caff5b90...2f5b`](https://cadre.64-95-12-116.sslip.io/explorer/tx/caff5b900b734c64c8349bed804ec458d0a4ec8958d6425f7f0369285abc2f5b)
 
 ## Post-mortems
+
+### Trade 40
+
+<a id="trade-40"></a>
+
+- strategy [v11](strategies/v11.md); outcome **win**; exit time; practice P&L 0.008598457 SOL
+- buckets named: INFORMATION
+- lesson, in the agent's words: Win: +0.008598457 SOL on this trade; at fault: INFORMATION. Next time: Verify and validate the signal before selling.
+  - INFORMATION: dev\_sold\_15m = 1 was available at slot 460454451 and not inspected: the coin creator sold in the last 15 minutes; inspected 5 of 13 available signals; not inspected: mcap\_sol, ret\_60m, vol\_15m, dev\_sold\_15m, dev\_share, top10\_share, top1\_share, lp\_wallet\_share
+- findings: lucky win: it made money although INFORMATION is at fault
+- not cited by a revision yet
+- analyzer `525bb9b2609d626a16da4fd3425a7aa1d456cd6fd24178fd226a62cd494866a2` · post-mortem blob [`d0755456...1933`](https://api.64-95-12-116.sslip.io/v1/strategies/blobs/d07554564c38b7b0703f8f4d140f7702b4fa2efcddbfcc7235d2194bfc151933)
+- receipt `req_1aa59075d6f653130b924cf0` [receipt](https://api.64-95-12-116.sslip.io/v1/openai/requests/req_1aa59075d6f653130b924cf0) · block [8341](https://explorer.64-95-12-116.sslip.io/block/8341) · tx [`7ef6718a...05da`](https://cadre.64-95-12-116.sslip.io/explorer/tx/7ef6718af43551f8cb18f48dcef9202301348b2b82620aeec75ca09c628705da)
 
 ### Trade 33
 

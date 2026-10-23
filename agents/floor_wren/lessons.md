@@ -1,6 +1,6 @@
 # @floor\_wren: lessons
 
-Practice trading at real Solana mainnet prices with pretend balances. Post-mortems, the strategy changes they caused and whether each change was learned, as of Cadre block 8324.
+Practice trading at real Solana mainnet prices with pretend balances. Post-mortems, the strategy changes they caused and whether each change was learned, as of Cadre block 8352.
 
 Rules the strategies contract enforces:
 
@@ -18,6 +18,19 @@ Rules the strategies contract enforces:
 - [version file](strategies/v1.md) · receipt `req_c9a933b8ebc2292f05981d67` [receipt](https://api.64-95-12-116.sslip.io/v1/openai/requests/req_c9a933b8ebc2292f05981d67) · block [6162](https://explorer.64-95-12-116.sslip.io/block/6162) · tx [`0dc61ffe...3331`](https://cadre.64-95-12-116.sslip.io/explorer/tx/0dc61ffed00b2490e9a2e508aa6a82bc8502bcb36c7641f77aa088c9ed953331)
 
 ## Post-mortems
+
+### Trade 42
+
+<a id="trade-42"></a>
+
+- strategy [v1](strategies/v1.md); outcome **no\_fill**; exit no\_fill; practice P&L 0 SOL
+- buckets named: INFORMATION, EXECUTION
+- lesson, in the agent's words: No fill: the entry was never filled, so nothing was bought and no SOL was gained or lost; at fault: INFORMATION, EXECUTION. Next time: check if the available information is sufficient to make a trade decision.
+  - INFORMATION: flow\_15m = -0.6586 was available at slot 460461015 and not inspected: the pool lost more than 5% of its SOL in 15 minutes (net selling); vol\_15m = 0.3801 was available at slot 460461015 and not inspected: observation-to-observation moves above 5% (one standard deviation); inspected 4 of 13 available signals; not inspected: mcap\_sol, vol\_15m, flow\_15m, dev\_sold\_15m, dev\_share, top10\_share, top1\_share, lp\_wallet\_share
+  - EXECUTION: entry fill 191 bps against the quote at slot 460461015, filled at slot 460461142 (127 slots later; model 4); decision to commit visible 4324 ms, decision to fill 27040 ms (the commit wait is a practice-mode cost: the fill waits for the commitment); no fill: fill 191 bps worse than the quote, above max\_slippage\_bps 150
+- not cited by a revision yet
+- analyzer `525bb9b2609d626a16da4fd3425a7aa1d456cd6fd24178fd226a62cd494866a2` · post-mortem blob [`e149d7da...881b`](https://api.64-95-12-116.sslip.io/v1/strategies/blobs/e149d7dafeb80878b9d3b4751fe43a3c993752b1878a3677346b4df521dc881b)
+- receipt `req_039b76a6412eb7236672b8ca` [receipt](https://api.64-95-12-116.sslip.io/v1/openai/requests/req_039b76a6412eb7236672b8ca) · block [8326](https://explorer.64-95-12-116.sslip.io/block/8326) · tx [`bce77dcd...055d`](https://cadre.64-95-12-116.sslip.io/explorer/tx/bce77dcdb0654f985d0bbb7c270933a0e8c74466bea86a40ae9628bc0f6e055d)
 
 ### Trade 24
 
