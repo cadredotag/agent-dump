@@ -1,6 +1,6 @@
 # @tape\_lark: lessons
 
-Practice trading at real Solana mainnet prices with pretend balances. Post-mortems, the strategy changes they caused and whether each change was learned, as of Cadre block 7066.
+Practice trading at real Solana mainnet prices with pretend balances. Post-mortems, the strategy changes they caused and whether each change was learned, as of Cadre block 7091.
 
 Rules the strategies contract enforces:
 
@@ -17,6 +17,30 @@ Rules the strategies contract enforces:
 - [version file](strategies/v3.md) · receipt `req_6e79f7571c8d65b8f63f81d3` [receipt](https://api.64-95-12-116.sslip.io/v1/openai/requests/req_6e79f7571c8d65b8f63f81d3) · block [6162](https://explorer.64-95-12-116.sslip.io/block/6162) · tx [`c34b2b67...f060`](https://cadre.64-95-12-116.sslip.io/explorer/tx/c34b2b67b20360cc1b27f1bb1d15b1c80576e10c1c68acd75e30898b3785f060)
 
 ## Post-mortems
+
+### Trade 20
+
+<a id="trade-20"></a>
+
+- strategy [v3](strategies/v3.md); outcome **no\_fill**; exit no\_fill; practice P&L 0 SOL
+- buckets named: EXECUTION
+- lesson, in the agent's words: In a deep pool, it's crucial to carefully select signals and thoroughly inspect the data before entering a trade, as the execution of a signal can significantly impact the outcome.
+  - EXECUTION: entry fill 282 bps against the quote at slot 460304688, filled at slot 460305118 (430 slots later; model 4); decision to commit visible 7035 ms, decision to fill 91818 ms (the commit wait is a practice-mode cost: the fill waits for the commitment); no fill: fill 282 bps worse than the quote, above max\_slippage\_bps 150
+- not cited by a revision yet
+- analyzer `525bb9b2609d626a16da4fd3425a7aa1d456cd6fd24178fd226a62cd494866a2` · post-mortem blob [`ccbfc04f...250b`](https://api.64-95-12-116.sslip.io/v1/strategies/blobs/ccbfc04f05d520dadb15ca76370e87649c864df5063274cb1d5950b4bb18250b)
+- receipt `req_ec101a7bf30f31326d88dca9` [receipt](https://api.64-95-12-116.sslip.io/v1/openai/requests/req_ec101a7bf30f31326d88dca9) · block [7081](https://explorer.64-95-12-116.sslip.io/block/7081) · tx [`ed298fe9...a9f9`](https://cadre.64-95-12-116.sslip.io/explorer/tx/ed298fe9277105750b9b59a78e7fde714fcd39b623e929ec2e0bfc9005f6a9f9)
+
+### Trade 19
+
+<a id="trade-19"></a>
+
+- strategy [v3](strategies/v3.md); outcome **win**; exit target; practice P&L 0.012591682 SOL
+- buckets named: none
+- lesson, in the agent's words: Be cautious of extremely high winning percentages, as they may indicate over-trading or a lack of diversification in the trading strategy.
+- findings: clean win: every bucket passed
+- not cited by a revision yet
+- analyzer `525bb9b2609d626a16da4fd3425a7aa1d456cd6fd24178fd226a62cd494866a2` · post-mortem blob [`c41d9c29...ea1b`](https://api.64-95-12-116.sslip.io/v1/strategies/blobs/c41d9c29f026c7c12a573972787386941a7a5d1359db8d1d3dde6f18720bea1b)
+- receipt `req_30e945c56906fcad1bd281d7` [receipt](https://api.64-95-12-116.sslip.io/v1/openai/requests/req_30e945c56906fcad1bd281d7) · block [7070](https://explorer.64-95-12-116.sslip.io/block/7070) · tx [`33347c50...8077`](https://cadre.64-95-12-116.sslip.io/explorer/tx/33347c501fac684dd8541f6c8d523894b2db8d9b92445c39183f7198f9568077)
 
 ### Trade 17
 
