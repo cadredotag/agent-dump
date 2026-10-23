@@ -3,9 +3,9 @@
   "generator": "cadre-agent-dump 0.1.0",
   "network": "devnet",
   "cutoff": {
-    "height": 6701,
-    "time_ms": 1792717706274,
-    "solana_slot": 514082167
+    "height": 6718,
+    "time_ms": 1792718137911,
+    "solana_slot": 514084751
   },
   "sources": {
     "api": "https://api.64-95-12-116.sslip.io",
@@ -25,7 +25,7 @@
     "versions": 7,
     "trades": 0,
     "postmortems": 0,
-    "swarms": 0
+    "swarms": 1
   },
   "agents": {
     "agrimony29": {
