@@ -1,6 +1,6 @@
 # @still\_heron: lessons
 
-Practice trading at real Solana mainnet prices with pretend balances. Post-mortems, the strategy changes they caused and whether each change was learned, as of Cadre block 6901.
+Practice trading at real Solana mainnet prices with pretend balances. Post-mortems, the strategy changes they caused and whether each change was learned, as of Cadre block 6920.
 
 Rules the strategies contract enforces:
 
@@ -18,6 +18,18 @@ Rules the strategies contract enforces:
 - [version file](strategies/v2.md) · receipt `req_b8654889c00717839d113874` [receipt](https://api.64-95-12-116.sslip.io/v1/openai/requests/req_b8654889c00717839d113874) · block [6162](https://explorer.64-95-12-116.sslip.io/block/6162) · tx [`3afc9298...c4ac`](https://cadre.64-95-12-116.sslip.io/explorer/tx/3afc92989ed8168e6c6e2a5e170fd5cb08a18f1058a85e9ad23c598a8fe2c4ac)
 
 ## Post-mortems
+
+### Trade 5
+
+<a id="trade-5"></a>
+
+- strategy [v2](strategies/v2.md); outcome **loss**; exit stop; practice P&L -0.095824582 SOL
+- buckets named: SIZING, RISK\_MANAGEMENT
+  - SIZING: size 99843135 lamports, max risk 9984313, entry impact 92 bps; lost 95824582 lamports, 859.75% above the stated max risk
+  - RISK\_MANAGEMENT: stop 8.00%, one standard deviation over the 1200 s hold 2.13% (vol\_15m 0.002752 per 20 s observation); gapped through the stop: sold 87837131 lamports below the stop level (more than 25% of the stop distance); a 20 s check cannot stop a gap
+- not cited by a revision yet
+- analyzer `525bb9b2609d626a16da4fd3425a7aa1d456cd6fd24178fd226a62cd494866a2` · post-mortem blob [`06834f93...8096`](https://api.64-95-12-116.sslip.io/v1/strategies/blobs/06834f93aac0481c9849dd2e98561f1cfaae9de1c2007530e88a54659b1d8096)
+- receipt `req_8cb89dfc096603e7487ddc17` [receipt](https://api.64-95-12-116.sslip.io/v1/openai/requests/req_8cb89dfc096603e7487ddc17) · block [6903](https://explorer.64-95-12-116.sslip.io/block/6903) · tx [`91e857e8...4e62`](https://cadre.64-95-12-116.sslip.io/explorer/tx/91e857e8aa2ef334e6766b557e4f2f8082b54774365ec3cb1fcd9d5528be4e62)
 
 ### Trade 3
 
