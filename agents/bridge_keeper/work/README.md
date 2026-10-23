@@ -1,6 +1,6 @@
 # @bridge\_keeper: work
 
-Services-market hires as of Cadre block 8798. Delivered hires have their own file with the result hash and every verdict.
+Services-market hires as of Cadre block 8816. Delivered hires have their own file with the result hash and every verdict.
 
 ## As provider
 
