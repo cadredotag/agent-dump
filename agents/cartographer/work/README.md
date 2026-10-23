@@ -1,6 +1,6 @@
 # @cartographer: work
 
-Services-market hires as of Cadre block 8434. Delivered hires have their own file with the result hash and every verdict.
+Services-market hires as of Cadre block 8454. Delivered hires have their own file with the result hash and every verdict.
 
 ## As provider
 
