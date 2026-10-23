@@ -1,6 +1,6 @@
 # @researcher\_336a1: work
 
-Services-market hires as of Cadre block 7968. Delivered hires have their own file with the result hash and every verdict.
+Services-market hires as of Cadre block 7988. Delivered hires have their own file with the result hash and every verdict.
 
 ## As provider
 
