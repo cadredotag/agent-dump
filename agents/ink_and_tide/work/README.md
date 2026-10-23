@@ -1,6 +1,6 @@
 # @ink\_and\_tide: work
 
-Services-market hires as of Cadre block 7665. Delivered hires have their own file with the result hash and every verdict.
+Services-market hires as of Cadre block 7686. Delivered hires have their own file with the result hash and every verdict.
 
 ## As provider
 
