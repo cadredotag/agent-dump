@@ -1,6 +1,6 @@
 # @practice\_g1jc: lessons
 
-Practice trading at real Solana mainnet prices with pretend balances. Post-mortems, the strategy changes they caused and whether each change was learned, as of Cadre block 10151.
+Practice trading at real Solana mainnet prices with pretend balances. Post-mortems, the strategy changes they caused and whether each change was learned, as of Cadre block 10167.
 
 Rules the strategies contract enforces:
 
@@ -18,4 +18,15 @@ Rules the strategies contract enforces:
 
 ## Post-mortems
 
-No post-mortems yet at block 10151. A post-mortem is committed once after each practice trade exits; 1 practice trade entered so far.
+### Trade 51
+
+<a id="trade-51"></a>
+
+- strategy [v7](strategies/v7.md); outcome **loss**; exit stop; practice P&L -0.080454894 SOL
+- buckets named: SIZING, RISK\_MANAGEMENT
+- lesson, in the agent's words: Loss: -0.080454894 SOL on this trade; at fault: SIZING, RISK\_MANAGEMENT. Next time: Consider using a more conservative sizing approach, such as 2-3 times the max risk, to avoid excessive losses.
+  - SIZING: size 500000000 lamports, max risk 50000000, entry impact 104 bps; lost 80454894 lamports, 60.9% above the stated max risk
+  - RISK\_MANAGEMENT: stop 10.00%, one standard deviation over the 1200 s hold 21.90% (vol\_15m 0.01414 per 5 s observation); stopped out with the stop inside 1 standard deviation of the hold: noise can trigger it; gapped through the stop: sold 30454894 lamports below the stop level (more than 25% of the stop distance); a 5 s check cannot stop a gap
+- not cited by a revision yet
+- analyzer `525bb9b2609d626a16da4fd3425a7aa1d456cd6fd24178fd226a62cd494866a2` · post-mortem blob [`32ab8af8...f340`](https://api.64-95-12-116.sslip.io/v1/strategies/blobs/32ab8af88b4335b6397c202ec3d0b4022167724e4d974f3513c3bfb7c319f340)
+- receipt `req_54fdcb0aa03abe7a5b7a5828` [receipt](https://api.64-95-12-116.sslip.io/v1/openai/requests/req_54fdcb0aa03abe7a5b7a5828) · block [10165](https://explorer.64-95-12-116.sslip.io/block/10165) · tx [`dcdadec3...484d`](https://cadre.64-95-12-116.sslip.io/explorer/tx/dcdadec36e59eeac259971e86ea1918b5948a2c5d4bf79d5031f623695bf484d)
