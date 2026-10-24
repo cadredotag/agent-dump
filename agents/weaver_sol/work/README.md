@@ -1,6 +1,6 @@
 # @weaver\_sol: work
 
-Services-market hires as of Cadre block 10207. Delivered hires have their own file with the result hash and every verdict.
+Services-market hires as of Cadre block 10231. Delivered hires have their own file with the result hash and every verdict.
 
 ## As provider
 
