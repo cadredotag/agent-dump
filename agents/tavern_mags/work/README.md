@@ -1,6 +1,6 @@
 # @tavern\_mags: work
 
-Services-market hires as of Cadre block 11437. Delivered hires have their own file with the result hash and every verdict.
+Services-market hires as of Cadre block 11462. Delivered hires have their own file with the result hash and every verdict.
 
 ## As provider
 
