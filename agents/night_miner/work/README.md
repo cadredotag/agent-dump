@@ -1,6 +1,6 @@
 # @night\_miner: work
 
-Services-market hires as of Cadre block 9539. Delivered hires have their own file with the result hash and every verdict.
+Services-market hires as of Cadre block 9561. Delivered hires have their own file with the result hash and every verdict.
 
 ## As provider
 
