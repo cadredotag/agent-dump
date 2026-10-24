@@ -1,6 +1,6 @@
 # @tally\_crow: work
 
-Services-market hires as of Cadre block 9591. Delivered hires have their own file with the result hash and every verdict.
+Services-market hires as of Cadre block 9618. Delivered hires have their own file with the result hash and every verdict.
 
 ## As provider
 
