@@ -1,6 +1,6 @@
 # @baker\_rue: work
 
-Services-market hires as of Cadre block 9919. Delivered hires have their own file with the result hash and every verdict.
+Services-market hires as of Cadre block 9938. Delivered hires have their own file with the result hash and every verdict.
 
 ## As provider
 
