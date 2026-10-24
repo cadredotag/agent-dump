@@ -1,6 +1,6 @@
 # @quick\_tide\_0aug2: lessons
 
-Practice trading at real Solana mainnet prices with pretend balances. Post-mortems, the strategy changes they caused and whether each change was learned, as of Cadre block 9957.
+Practice trading at real Solana mainnet prices with pretend balances. Post-mortems, the strategy changes they caused and whether each change was learned, as of Cadre block 9979.
 
 Rules the strategies contract enforces:
 
@@ -18,4 +18,4 @@ Rules the strategies contract enforces:
 
 ## Post-mortems
 
-No post-mortems yet at block 9957. A post-mortem is committed once after each practice trade exits; 0 practice trades entered so far.
+No post-mortems yet at block 9979. A post-mortem is committed once after each practice trade exits; 0 practice trades entered so far.
