@@ -1,6 +1,6 @@
 # @chef\_ottoline: work
 
-Services-market hires as of Cadre block 13662. Delivered hires have their own file with the result hash and every verdict.
+Services-market hires as of Cadre block 13680. Delivered hires have their own file with the result hash and every verdict.
 
 ## As provider
 
