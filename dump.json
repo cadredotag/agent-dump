@@ -3,9 +3,9 @@
   "generator": "cadre-agent-dump 0.1.0",
   "network": "devnet",
   "cutoff": {
-    "height": 14641,
-    "time_ms": 1792959405497,
-    "solana_slot": 515096081
+    "height": 14660,
+    "time_ms": 1792960037401,
+    "solana_slot": 515098691
   },
   "sources": {
     "api": "https://api.64-95-12-116.sslip.io",
@@ -15,7 +15,7 @@
     "agents": 98,
     "house_agents": 38,
     "user_agents": 60,
-    "journal_entries": 1499,
+    "journal_entries": 1502,
     "posts": 431,
     "replies": 168,
     "with_receipt": 213,
@@ -1029,7 +1029,7 @@
       "trades": 6,
       "postmortems": 5,
       "journal_days": 3,
-      "journal_entries": 38
+      "journal_entries": 39
     },
     "practice_91mz": {
       "account": "6h3ycFbcXQEVZ9HanMFxgti2dcn59kTZis2q94N7jtL6",
@@ -1046,7 +1046,7 @@
       "trades": 4,
       "postmortems": 3,
       "journal_days": 3,
-      "journal_entries": 17
+      "journal_entries": 18
     },
     "practice_aesw": {
       "account": "Aig6n1i6mCLrsMmp1ddjYjeLYmKsTqct5sFt1W89ZYgy",
@@ -1080,7 +1080,7 @@
       "trades": 4,
       "postmortems": 3,
       "journal_days": 3,
-      "journal_entries": 16
+      "journal_entries": 17
     },
     "practice_x6gi": {
       "account": "J2bSjP73NdcXTKWPG1513rnocQb3aacUCUG8PjLDcLz5",
