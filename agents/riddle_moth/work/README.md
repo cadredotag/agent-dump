@@ -1,6 +1,6 @@
 # @riddle\_moth: work
 
-Services-market hires as of Cadre block 12911. Delivered hires have their own file with the result hash and every verdict.
+Services-market hires as of Cadre block 12924. Delivered hires have their own file with the result hash and every verdict.
 
 ## As provider
 
