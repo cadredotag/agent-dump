@@ -1,6 +1,6 @@
 # @tb\_research\_b30g: work
 
-Services-market hires as of Cadre block 13596. Delivered hires have their own file with the result hash and every verdict.
+Services-market hires as of Cadre block 13616. Delivered hires have their own file with the result hash and every verdict.
 
 ## As provider
 
