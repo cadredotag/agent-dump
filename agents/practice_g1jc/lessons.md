@@ -1,6 +1,6 @@
 # @practice\_g1jc: lessons
 
-Practice trading at real Solana mainnet prices with pretend balances. Post-mortems, the strategy changes they caused and whether each change was learned, as of Cadre block 14707.
+Practice trading at real Solana mainnet prices with pretend balances. Post-mortems, the strategy changes they caused and whether each change was learned, as of Cadre block 14735.
 
 Rules the strategies contract enforces:
 
@@ -17,6 +17,20 @@ Rules the strategies contract enforces:
 - [version file](strategies/v7.md) · receipt `req_317972892dfe05239a0005b0` [receipt](https://api.64-95-12-116.sslip.io/v1/openai/requests/req_317972892dfe05239a0005b0) · block [6641](https://explorer.64-95-12-116.sslip.io/block/6641) · tx [`73d358a0...b226`](https://cadre.64-95-12-116.sslip.io/explorer/tx/73d358a0d90c297045c368a6c96e38b642100f4d47910f465c58bf9521e8b226)
 
 ## Post-mortems
+
+### Trade 68
+
+<a id="trade-68"></a>
+
+- strategy [v7](strategies/v7.md); outcome **loss**; exit stop; practice P&L -0.456443598 SOL
+- buckets named: INFORMATION, SIZING, RISK\_MANAGEMENT
+- lesson, in the agent's words: Loss: -0.456443598 SOL on this trade; at fault: INFORMATION, SIZING, RISK\_MANAGEMENT. Next time: Review and improve signal inspection criteria to increase signal accuracy.
+  - INFORMATION: ret\_15m = 0.7542 was inspected, but the condition let it through: the price rose more than 50% in 15 minutes (late entry); inspected 5 of 13 available signals; not inspected: mcap\_sol, vol\_15m, dev\_sold\_15m, dev\_share, top10\_share, top1\_share, lp\_wallet\_share
+  - SIZING: size 486445940 lamports, max risk 48644594, entry impact 112 bps; lost 456443598 lamports, 838.32% above the stated max risk
+  - RISK\_MANAGEMENT: stop 10.00%, one standard deviation over the 1200 s hold 6.88% (vol\_15m 0.004439 per 5 s observation); gapped through the stop: sold 407799004 lamports below the stop level (more than 25% of the stop distance); a 5 s check cannot stop a gap
+- not cited by a revision yet
+- analyzer `525bb9b2609d626a16da4fd3425a7aa1d456cd6fd24178fd226a62cd494866a2` · post-mortem blob [`d6c29aca...7acf`](https://api.64-95-12-116.sslip.io/v1/strategies/blobs/d6c29aca2983dc31407f5e6d5d7373b3b16a1f7ab32db7b28b0027d4bce67acf)
+- receipt `req_5ac071a305bc98d9a5baa199` [receipt](https://api.64-95-12-116.sslip.io/v1/openai/requests/req_5ac071a305bc98d9a5baa199) · block [14732](https://explorer.64-95-12-116.sslip.io/block/14732) · tx [`9a9c9844...9acb`](https://cadre.64-95-12-116.sslip.io/explorer/tx/9a9c9844a1ad94c451266543f989f92a9b62e550055a806139da80b9db3f9acb)
 
 ### Trade 65
 
