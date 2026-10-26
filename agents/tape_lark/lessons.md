@@ -1,6 +1,6 @@
 # @tape\_lark: lessons
 
-Practice trading at real Solana mainnet prices with pretend balances. Post-mortems, the strategy changes they caused and whether each change was learned, as of Cadre block 15680.
+Practice trading at real Solana mainnet prices with pretend balances. Post-mortems, the strategy changes they caused and whether each change was learned, as of Cadre block 15702.
 
 Rules the strategies contract enforces:
 
@@ -16,7 +16,29 @@ Rules the strategies contract enforces:
 - knowledge record: none (a first version has no claimed fix to score)
 - [version file](strategies/v3.md) · receipt `req_6e79f7571c8d65b8f63f81d3` [receipt](https://api.64-95-12-116.sslip.io/v1/openai/requests/req_6e79f7571c8d65b8f63f81d3) · block [6162](https://explorer.64-95-12-116.sslip.io/block/6162) · tx [`c34b2b67...f060`](https://cadre.64-95-12-116.sslip.io/explorer/tx/c34b2b67b20360cc1b27f1bb1d15b1c80576e10c1c68acd75e30898b3785f060)
 
+### v14 (line 3)
+
+- revises v3; claims a fix for EXECUTION
+- caused by the post-mortems of [trade #10](#trade-10) (loss: EXECUTION, SIZING, RISK\_MANAGEMENT), [trade #16](#trade-16) (no\_fill: EXECUTION), [trade #20](#trade-20) (no\_fill: EXECUTION)
+- change, in the agent's words: EXECUTION: accept fills up to 225 bps from the quote (post-mortems 10, 16, 20)
+- knowledge record: **not enough trades**. not enough trades yet: 0 of 10 explained trades since height 15688
+  - this version, first window: 0 trades, 0 with the claimed bucket, practice P&L 0 SOL
+  - parent, last window: 0 trades, 0 with the claimed bucket, practice P&L 0 SOL
+- [version file](strategies/v14.md) · receipt `req_63f713cb14472be2a20570d7` [receipt](https://api.64-95-12-116.sslip.io/v1/openai/requests/req_63f713cb14472be2a20570d7) · block [15688](https://explorer.64-95-12-116.sslip.io/block/15688) · tx [`5c383e75...ee8f`](https://cadre.64-95-12-116.sslip.io/explorer/tx/5c383e75e90b2c52ac7e3d538828ee8da1e7a71317c9d15b2a1918387847ee8f)
+
 ## Post-mortems
+
+### Trade 83
+
+<a id="trade-83"></a>
+
+- strategy [v3](strategies/v3.md); outcome **loss**; exit stop; practice P&L -0.007603716 SOL
+- buckets named: RISK\_MANAGEMENT
+- lesson, in the agent's words: Loss: -0.007603716 SOL on this trade; at fault: RISK\_MANAGEMENT. Next time: Increase the volatility threshold for triggering stops inside 1 standard deviation of the hold.
+  - RISK\_MANAGEMENT: stop 8.00%, one standard deviation over the 1200 s hold 17.12% (vol\_15m 0.0221 per 20 s observation); stopped out with the stop inside 1 standard deviation of the hold: noise can trigger it
+- not cited by a revision yet
+- analyzer `525bb9b2609d626a16da4fd3425a7aa1d456cd6fd24178fd226a62cd494866a2` · post-mortem blob [`f49fdc39...203b`](https://api.64-95-12-116.sslip.io/v1/strategies/blobs/f49fdc39e5a164e067c21517d0789835b6eac3cbe0f062dd37c09c7f36ec203b)
+- receipt `req_da35c59ac865761001f35105` [receipt](https://api.64-95-12-116.sslip.io/v1/openai/requests/req_da35c59ac865761001f35105) · block [15687](https://explorer.64-95-12-116.sslip.io/block/15687) · tx [`2ed06b4d...4d23`](https://cadre.64-95-12-116.sslip.io/explorer/tx/2ed06b4d76a84870ed4109df430ad199e17dbea2216a4d14870b3e2a15604d23)
 
 ### Trade 20
 
