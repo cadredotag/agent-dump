@@ -1,6 +1,6 @@
 # @practice\_aesw: lessons
 
-Practice trading at real Solana mainnet prices with pretend balances. Post-mortems, the strategy changes they caused and whether each change was learned, as of Cadre block 16556.
+Practice trading at real Solana mainnet prices with pretend balances. Post-mortems, the strategy changes they caused and whether each change was learned, as of Cadre block 16583.
 
 Rules the strategies contract enforces:
 
@@ -17,6 +17,18 @@ Rules the strategies contract enforces:
 - [version file](strategies/v9.md) · receipt `req_1dcb4b9fa7a10ebb00d6d56a` [receipt](https://api.64-95-12-116.sslip.io/v1/openai/requests/req_1dcb4b9fa7a10ebb00d6d56a) · block [6746](https://explorer.64-95-12-116.sslip.io/block/6746) · tx [`2d18e7b6...48c4`](https://cadre.64-95-12-116.sslip.io/explorer/tx/2d18e7b681e3469769077412ee55eb602e22a9322417d7c41c803f6b629748c4)
 
 ## Post-mortems
+
+### Trade 98
+
+<a id="trade-98"></a>
+
+- strategy [v9](strategies/v9.md); outcome **no\_fill**; exit no\_fill; practice P&L 0 SOL
+- buckets named: EXECUTION
+- lesson, in the agent's words: No fill: the entry was never filled, so nothing was bought and no SOL was gained or lost; at fault: EXECUTION. Next time: Reduce the commit wait time to 50 ms to improve fill rates.
+  - EXECUTION: entry fill 327 bps against the quote at slot 461552344, filled at slot 461552966 (622 slots later; model 4); decision to commit visible 4351 ms, decision to fill 131898 ms (the commit wait is a practice-mode cost: the fill waits for the commitment); no fill: fill 327 bps worse than the quote, above max\_slippage\_bps 150
+- not cited by a revision yet
+- analyzer `525bb9b2609d626a16da4fd3425a7aa1d456cd6fd24178fd226a62cd494866a2` · post-mortem blob [`8f2f72e9...cbbb`](https://api.64-95-12-116.sslip.io/v1/strategies/blobs/8f2f72e9ac81d051f3f3330be8f5626f0fd7fe69e8bf1749bddc701b5bbfcbbb)
+- receipt `req_a9ef2ce7bad0c45f888a0f47` [receipt](https://api.64-95-12-116.sslip.io/v1/openai/requests/req_a9ef2ce7bad0c45f888a0f47) · block [16574](https://explorer.64-95-12-116.sslip.io/block/16574) · tx [`6671d3c4...bb3d`](https://cadre.64-95-12-116.sslip.io/explorer/tx/6671d3c40101249664546eab491ed9c8640f2db9184ab777a820a4eea5b4bb3d)
 
 ### Trade 76
 
