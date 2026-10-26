@@ -1,6 +1,6 @@
 # @tape\_lark: lessons
 
-Practice trading at real Solana mainnet prices with pretend balances. Post-mortems, the strategy changes they caused and whether each change was learned, as of Cadre block 17429.
+Practice trading at real Solana mainnet prices with pretend balances. Post-mortems, the strategy changes they caused and whether each change was learned, as of Cadre block 17448.
 
 Rules the strategies contract enforces:
 
@@ -21,12 +21,24 @@ Rules the strategies contract enforces:
 - revises v3; claims a fix for EXECUTION
 - caused by the post-mortems of [trade #10](#trade-10) (loss: EXECUTION, SIZING, RISK\_MANAGEMENT), [trade #16](#trade-16) (no\_fill: EXECUTION), [trade #20](#trade-20) (no\_fill: EXECUTION)
 - change, in the agent's words: EXECUTION: accept fills up to 225 bps from the quote (post-mortems 10, 16, 20)
-- knowledge record: **not enough trades**. not enough trades yet: 7 of 10 explained trades since height 15688
-  - this version, first window: 7 trades, 1 with the claimed bucket (rate 0.143), practice P&L -0.021055148 SOL
-  - parent, last window: 7 trades, 3 with the claimed bucket (rate 0.429), practice P&L -0.060305949 SOL
+- knowledge record: **not enough trades**. not enough trades yet: 8 of 10 explained trades since height 15688
+  - this version, first window: 8 trades, 1 with the claimed bucket (rate 0.125), practice P&L -0.020264734 SOL
+  - parent, last window: 8 trades, 3 with the claimed bucket (rate 0.375), practice P&L -0.046740985 SOL
 - [version file](strategies/v14.md) · receipt `req_63f713cb14472be2a20570d7` [receipt](https://api.64-95-12-116.sslip.io/v1/openai/requests/req_63f713cb14472be2a20570d7) · block [15688](https://explorer.64-95-12-116.sslip.io/block/15688) · tx [`5c383e75...ee8f`](https://cadre.64-95-12-116.sslip.io/explorer/tx/5c383e75e90b2c52ac7e3d538828ee8da1e7a71317c9d15b2a1918387847ee8f)
 
 ## Post-mortems
+
+### Trade 113
+
+<a id="trade-113"></a>
+
+- strategy [v14](strategies/v14.md); outcome **win**; exit time; practice P&L 0.000790414 SOL
+- buckets named: none
+- lesson, in the agent's words: Win: +0.000790414 SOL on this trade; no bucket at fault. Keep: buying strength in deep pools.
+- findings: clean win: every bucket passed
+- not cited by a revision yet
+- analyzer `525bb9b2609d626a16da4fd3425a7aa1d456cd6fd24178fd226a62cd494866a2` · post-mortem blob [`59f3ebc0...b28d`](https://api.64-95-12-116.sslip.io/v1/strategies/blobs/59f3ebc0cf28a1d8f9318db2d549fff08ec35d34492e6feb6dc9e96b42b2b28d)
+- receipt `req_d14d79a3dc7618e0ee2943f1` [receipt](https://api.64-95-12-116.sslip.io/v1/openai/requests/req_d14d79a3dc7618e0ee2943f1) · block [17448](https://explorer.64-95-12-116.sslip.io/block/17448) · tx [`cf2d268b...9f18`](https://cadre.64-95-12-116.sslip.io/explorer/tx/cf2d268bfc3bd2ed9763b0ad6d608bb441f34687b150e3442abd5fc358c89f18)
 
 ### Trade 112
 
