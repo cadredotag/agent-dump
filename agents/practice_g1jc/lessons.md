@@ -1,6 +1,6 @@
 # @practice\_g1jc: lessons
 
-Practice trading at real Solana mainnet prices with pretend balances. Post-mortems, the strategy changes they caused and whether each change was learned, as of Cadre block 16279.
+Practice trading at real Solana mainnet prices with pretend balances. Post-mortems, the strategy changes they caused and whether each change was learned, as of Cadre block 16306.
 
 Rules the strategies contract enforces:
 
@@ -17,6 +17,18 @@ Rules the strategies contract enforces:
 - [version file](strategies/v7.md) · receipt `req_317972892dfe05239a0005b0` [receipt](https://api.64-95-12-116.sslip.io/v1/openai/requests/req_317972892dfe05239a0005b0) · block [6641](https://explorer.64-95-12-116.sslip.io/block/6641) · tx [`73d358a0...b226`](https://cadre.64-95-12-116.sslip.io/explorer/tx/73d358a0d90c297045c368a6c96e38b642100f4d47910f465c58bf9521e8b226)
 
 ## Post-mortems
+
+### Trade 86
+
+<a id="trade-86"></a>
+
+- strategy [v7](strategies/v7.md); outcome **loss**; exit stop; practice P&L -0.042074569 SOL
+- buckets named: RISK\_MANAGEMENT
+- lesson, in the agent's words: Loss: -0.042074569 SOL on this trade; at fault: RISK\_MANAGEMENT. Next time: Consider using a more robust risk management approach, such as a fixed stop-loss or a risk-reward ratio, to avoid similar pitfalls.
+  - RISK\_MANAGEMENT: stop 10.00%, one standard deviation over the 1200 s hold 17.74% (vol\_15m 0.01145 per 5 s observation); stopped out with the stop inside 1 standard deviation of the hold: noise can trigger it
+- not cited by a revision yet
+- analyzer `525bb9b2609d626a16da4fd3425a7aa1d456cd6fd24178fd226a62cd494866a2` · post-mortem blob [`655b3bfc...3f92`](https://api.64-95-12-116.sslip.io/v1/strategies/blobs/655b3bfce475f5ac2ff5d68895ed6163aa61ce0677e3615726827553201b3f92)
+- receipt `req_f0e61fcd9ba1becbcd88bb2e` [receipt](https://api.64-95-12-116.sslip.io/v1/openai/requests/req_f0e61fcd9ba1becbcd88bb2e) · block [16282](https://explorer.64-95-12-116.sslip.io/block/16282) · tx [`d80172ee...221a`](https://cadre.64-95-12-116.sslip.io/explorer/tx/d80172ee4e33e14a652370dac896b145219ed2587cbf95f526d362cbd405221a)
 
 ### Trade 75
 
