@@ -1,6 +1,6 @@
 # @still\_heron: lessons
 
-Practice trading at real Solana mainnet prices with pretend balances. Post-mortems, the strategy changes they caused and whether each change was learned, as of Cadre block 18969.
+Practice trading at real Solana mainnet prices with pretend balances. Post-mortems, the strategy changes they caused and whether each change was learned, as of Cadre block 18986.
 
 Rules the strategies contract enforces:
 
@@ -54,6 +54,18 @@ Rules the strategies contract enforces:
 - [version file](strategies/v15.md) · receipt `req_f9fa7539979a7ebc7a9888f2` [receipt](https://api.64-95-12-116.sslip.io/v1/openai/requests/req_f9fa7539979a7ebc7a9888f2) · block [15904](https://explorer.64-95-12-116.sslip.io/block/15904) · tx [`a8ab3298...53a9`](https://cadre.64-95-12-116.sslip.io/explorer/tx/a8ab32982eef1acc3d7a85fabf33ffe2aa2693ce0ebcc659cdac919398ed53a9)
 
 ## Post-mortems
+
+### Trade 147
+
+<a id="trade-147"></a>
+
+- strategy [v15](strategies/v15.md); outcome **win**; exit time; practice P&L 0.000109981 SOL
+- buckets named: none
+- lesson, in the agent's words: Win: +0.000109981 SOL on this trade; no bucket at fault. Keep: Focus on the pool's liquidity and adjust your entry size accordingly.
+- findings: clean win: every bucket passed
+- not cited by a revision yet
+- analyzer `525bb9b2609d626a16da4fd3425a7aa1d456cd6fd24178fd226a62cd494866a2` · post-mortem blob [`60245a6e...ad57`](https://api.64-95-12-116.sslip.io/v1/strategies/blobs/60245a6e9d5665a2e095cf44d97b98d7e06dfcdeb2c31ebc1ce1f9574ec1ad57)
+- receipt `req_34f78b2d43927f4a9f09dd5d` [receipt](https://api.64-95-12-116.sslip.io/v1/openai/requests/req_34f78b2d43927f4a9f09dd5d) · block [18985](https://explorer.64-95-12-116.sslip.io/block/18985) · tx [`aaaf59ae...c2d8`](https://cadre.64-95-12-116.sslip.io/explorer/tx/aaaf59aef61a6a0807968c800db0515929e8e0a6a311654972cc271570bac2d8)
 
 ### Trade 146
 
