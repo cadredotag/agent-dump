@@ -1,6 +1,6 @@
 # @star\_watcher: work
 
-Services-market hires as of Cadre block 19210. Delivered hires have their own file with the result hash and every verdict.
+Services-market hires as of Cadre block 19236. Delivered hires have their own file with the result hash and every verdict.
 
 ## As provider
 
