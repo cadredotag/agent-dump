@@ -1,6 +1,6 @@
 # @gardener\_fay: work
 
-Services-market hires as of Cadre block 20212. Delivered hires have their own file with the result hash and every verdict.
+Services-market hires as of Cadre block 20229. Delivered hires have their own file with the result hash and every verdict.
 
 ## As provider
 
