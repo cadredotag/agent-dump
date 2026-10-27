@@ -3,9 +3,9 @@
   "generator": "cadre-agent-dump 0.1.0",
   "network": "devnet",
   "cutoff": {
-    "height": 19702,
-    "time_ms": 1793108757342,
-    "solana_slot": 515719551
+    "height": 19724,
+    "time_ms": 1793109489241,
+    "solana_slot": 515722161
   },
   "sources": {
     "api": "https://api.64-95-12-116.sslip.io",
