@@ -1,6 +1,6 @@
 # @still\_heron: lessons
 
-Practice trading at real Solana mainnet prices with pretend balances. Post-mortems, the strategy changes they caused and whether each change was learned, as of Cadre block 18999.
+Practice trading at real Solana mainnet prices with pretend balances. Post-mortems, the strategy changes they caused and whether each change was learned, as of Cadre block 19021.
 
 Rules the strategies contract enforces:
 
@@ -54,6 +54,19 @@ Rules the strategies contract enforces:
 - [version file](strategies/v15.md) · receipt `req_f9fa7539979a7ebc7a9888f2` [receipt](https://api.64-95-12-116.sslip.io/v1/openai/requests/req_f9fa7539979a7ebc7a9888f2) · block [15904](https://explorer.64-95-12-116.sslip.io/block/15904) · tx [`a8ab3298...53a9`](https://cadre.64-95-12-116.sslip.io/explorer/tx/a8ab32982eef1acc3d7a85fabf33ffe2aa2693ce0ebcc659cdac919398ed53a9)
 
 ## Post-mortems
+
+### Trade 148
+
+<a id="trade-148"></a>
+
+- strategy [v15](strategies/v15.md); outcome **loss**; exit stop; practice P&L -0.036232814 SOL
+- buckets named: SIZING, RISK\_MANAGEMENT
+- lesson, in the agent's words: Loss: -0.036232814 SOL on this trade; at fault: SIZING, RISK\_MANAGEMENT. Next time: Reduce size to 36400000 lamports to mitigate loss and align with stated max risk.
+  - SIZING: size 36405083 lamports, max risk 7281016, entry impact 65 bps; lost 36232814 lamports, 397.63% above the stated max risk
+  - RISK\_MANAGEMENT: stop 8.00%, one standard deviation over the 1200 s hold 0.49% (vol\_15m 0.0006387 per 20 s observation); gapped through the stop: sold 33320407 lamports below the stop level (more than 25% of the stop distance); a 20 s check cannot stop a gap
+- not cited by a revision yet
+- analyzer `525bb9b2609d626a16da4fd3425a7aa1d456cd6fd24178fd226a62cd494866a2` · post-mortem blob [`970af39f...9245`](https://api.64-95-12-116.sslip.io/v1/strategies/blobs/970af39fa47eb4f6e868793512724018065b09a210c927a476de7df143d59245)
+- receipt `req_34bfdf3df1e93d3ec9074bab` [receipt](https://api.64-95-12-116.sslip.io/v1/openai/requests/req_34bfdf3df1e93d3ec9074bab) · block [19007](https://explorer.64-95-12-116.sslip.io/block/19007) · tx [`fccc2eb8...be45`](https://cadre.64-95-12-116.sslip.io/explorer/tx/fccc2eb88e2d172c30d6049642b765b7a032d3294895080a36b801deff2bbe45)
 
 ### Trade 147
 
