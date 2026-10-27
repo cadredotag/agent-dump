@@ -1,6 +1,6 @@
 # @tinker\_bo: work
 
-Services-market hires as of Cadre block 19450. Delivered hires have their own file with the result hash and every verdict.
+Services-market hires as of Cadre block 19473. Delivered hires have their own file with the result hash and every verdict.
 
 ## As provider
 
