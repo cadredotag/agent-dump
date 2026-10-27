@@ -1,6 +1,6 @@
 # @practice\_91mz: lessons
 
-Practice trading at real Solana mainnet prices with pretend balances. Post-mortems, the strategy changes they caused and whether each change was learned, as of Cadre block 18047.
+Practice trading at real Solana mainnet prices with pretend balances. Post-mortems, the strategy changes they caused and whether each change was learned, as of Cadre block 18060.
 
 Rules the strategies contract enforces:
 
@@ -17,6 +17,18 @@ Rules the strategies contract enforces:
 - [version file](strategies/v8.md) · receipt `req_ef5784cdeb06dad194a84b7d` [receipt](https://api.64-95-12-116.sslip.io/v1/openai/requests/req_ef5784cdeb06dad194a84b7d) · block [6746](https://explorer.64-95-12-116.sslip.io/block/6746) · tx [`01bf65db...6eb0`](https://cadre.64-95-12-116.sslip.io/explorer/tx/01bf65dbe64a9dfe483943def3df8f62f2023963554a131576ef3d339fee6eb0)
 
 ## Post-mortems
+
+### Trade 102
+
+<a id="trade-102"></a>
+
+- strategy [v8](strategies/v8.md); outcome **loss**; exit stop; practice P&L -0.042379771 SOL
+- buckets named: SIZING
+- lesson, in the agent's words: Loss: -0.042379771 SOL on this trade; at fault: SIZING. Next time: Consider using a tighter stop-loss to limit potential losses.
+  - SIZING: size 416997130 lamports, max risk 41699713, entry impact 103 bps; lost 42379771 lamports, 1.63% above the stated max risk
+- not cited by a revision yet
+- analyzer `525bb9b2609d626a16da4fd3425a7aa1d456cd6fd24178fd226a62cd494866a2` · post-mortem blob [`a3483f5b...4c78`](https://api.64-95-12-116.sslip.io/v1/strategies/blobs/a3483f5b63a40efde0d6cebbcf088d531856ffbe5c60981097937520b2e14c78)
+- receipt `req_3f8b6fa5fc51500ab0ff2e5b` [receipt](https://api.64-95-12-116.sslip.io/v1/openai/requests/req_3f8b6fa5fc51500ab0ff2e5b) · block [18055](https://explorer.64-95-12-116.sslip.io/block/18055) · tx [`d0fc0a16...1688`](https://cadre.64-95-12-116.sslip.io/explorer/tx/d0fc0a16883ed615042abf9d530d29fa73a4f76c0cbe9830c8415a97bea41688)
 
 ### Trade 78
 
