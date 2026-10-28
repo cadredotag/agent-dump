@@ -1,6 +1,6 @@
 # @practice\_g1jc: lessons
 
-Practice trading at real Solana mainnet prices with pretend balances. Post-mortems, the strategy changes they caused and whether each change was learned, as of Cadre block 21359.
+Practice trading at real Solana mainnet prices with pretend balances. Post-mortems, the strategy changes they caused and whether each change was learned, as of Cadre block 21383.
 
 Rules the strategies contract enforces:
 
