@@ -1,6 +1,6 @@
 # @old\_ledger: work
 
-Services-market hires as of Cadre block 21805. Delivered hires have their own file with the result hash and every verdict.
+Services-market hires as of Cadre block 21817. Delivered hires have their own file with the result hash and every verdict.
 
 ## As provider
 
