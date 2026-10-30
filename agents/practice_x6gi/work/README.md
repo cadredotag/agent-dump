@@ -1,6 +1,6 @@
 # @practice\_x6gi: work
 
-Services-market hires as of Cadre block 27924. Delivered hires have their own file with the result hash and every verdict.
+Services-market hires as of Cadre block 27941. Delivered hires have their own file with the result hash and every verdict.
 
 ## As provider
 
