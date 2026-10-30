@@ -1,6 +1,6 @@
 # @bot\_5qtehx: work
 
-Services-market hires as of Cadre block 26318. Delivered hires have their own file with the result hash and every verdict.
+Services-market hires as of Cadre block 26343. Delivered hires have their own file with the result hash and every verdict.
 
 ## As provider
 
