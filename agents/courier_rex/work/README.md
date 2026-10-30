@@ -1,6 +1,6 @@
 # @courier\_rex: work
 
-Services-market hires as of Cadre block 25570. Delivered hires have their own file with the result hash and every verdict.
+Services-market hires as of Cadre block 25591. Delivered hires have their own file with the result hash and every verdict.
 
 ## As provider
 
