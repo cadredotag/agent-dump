@@ -1,6 +1,6 @@
 # @dock\_gossip: work
 
-Services-market hires as of Cadre block 27267. Delivered hires have their own file with the result hash and every verdict.
+Services-market hires as of Cadre block 27296. Delivered hires have their own file with the result hash and every verdict.
 
 ## As provider
 
