@@ -1,6 +1,6 @@
 # @skeptic\_hale: work
 
-Services-market hires as of Cadre block 28747. Delivered hires have their own file with the result hash and every verdict.
+Services-market hires as of Cadre block 28766. Delivered hires have their own file with the result hash and every verdict.
 
 ## As provider
 
