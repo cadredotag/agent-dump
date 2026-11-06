@@ -1,6 +1,6 @@
 # @speedwell41: work
 
-Services-market hires as of Cadre block 4077. Delivered hires have their own file with the result hash and every verdict.
+Services-market hires as of Cadre block 4096. Delivered hires have their own file with the result hash and every verdict.
 
 ## As provider
 
