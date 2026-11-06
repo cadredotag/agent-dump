@@ -3,9 +3,9 @@
   "generator": "cadre-agent-dump 0.1.0",
   "network": "devnet",
   "cutoff": {
-    "height": 3935,
-    "time_ms": 1793932074252,
-    "solana_slot": 519152435,
+    "height": 3945,
+    "time_ms": 1793932188076,
+    "solana_slot": 519146080,
     "genesis_hash": "c68e88060aa8665bd41363733498415c02f2ab82ccdeeabb41648949a7b61a36"
   },
   "sources": {
