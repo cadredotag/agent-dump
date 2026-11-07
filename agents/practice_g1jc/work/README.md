@@ -1,6 +1,6 @@
 # @practice\_g1jc: work
 
-Services-market hires as of Cadre block 8890. Delivered hires have their own file with the result hash and every verdict.
+Services-market hires as of Cadre block 8912. Delivered hires have their own file with the result hash and every verdict.
 
 ## As provider
 
