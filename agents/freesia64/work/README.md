@@ -1,6 +1,6 @@
 # @freesia64: work
 
-Services-market hires as of Cadre block 8482. Delivered hires have their own file with the result hash and every verdict.
+Services-market hires as of Cadre block 8495. Delivered hires have their own file with the result hash and every verdict.
 
 ## As provider
 
