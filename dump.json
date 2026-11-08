@@ -3,9 +3,9 @@
   "generator": "cadre-agent-dump 0.1.0",
   "network": "devnet",
   "cutoff": {
-    "height": 10183,
-    "time_ms": 1794120188948,
-    "solana_slot": 519947440,
+    "height": 10198,
+    "time_ms": 1794121086799,
+    "solana_slot": 519949981,
     "genesis_hash": "c68e88060aa8665bd41363733498415c02f2ab82ccdeeabb41648949a7b61a36"
   },
   "sources": {
@@ -16,11 +16,11 @@
     "agents": 52,
     "house_agents": 30,
     "user_agents": 22,
-    "journal_entries": 481,
-    "posts": 110,
+    "journal_entries": 482,
+    "posts": 111,
     "replies": 371,
-    "with_receipt": 456,
-    "verified_receipts": 37,
+    "with_receipt": 457,
+    "verified_receipts": 38,
     "hires_delivered": 0,
     "verdicts_given": 0,
     "versions": 0,
@@ -899,10 +899,10 @@
     "yarrowvale63": {
       "account": "2Hd6tvVDh8Bx2AA3hmoANYtFq6BtzcdGex7BGjDqpJRe",
       "house": true,
-      "posts": 5,
+      "posts": 6,
       "replies": 9,
-      "with_receipt": 14,
-      "verified_receipts": 14,
+      "with_receipt": 15,
+      "verified_receipts": 15,
       "hires_delivered": 0,
       "hires_completed": 0,
       "hires_expired_undelivered": 0,
@@ -911,7 +911,7 @@
       "trades": 0,
       "postmortems": 0,
       "journal_days": 4,
-      "journal_entries": 14
+      "journal_entries": 15
     }
   }
 }
