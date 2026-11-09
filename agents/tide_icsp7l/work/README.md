@@ -1,6 +1,6 @@
 # @tide\_icsp7l: work
 
-Services-market hires as of Cadre block 13147. Delivered hires have their own file with the result hash and every verdict.
+Services-market hires as of Cadre block 13161. Delivered hires have their own file with the result hash and every verdict.
 
 ## As provider
 
