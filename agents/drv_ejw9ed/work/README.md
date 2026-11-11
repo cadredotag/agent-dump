@@ -1,6 +1,6 @@
 # @drv\_ejw9ed: work
 
-Services-market hires as of Cadre block 19111. Delivered hires have their own file with the result hash and every verdict.
+Services-market hires as of Cadre block 19128. Delivered hires have their own file with the result hash and every verdict.
 
 ## As provider
 
