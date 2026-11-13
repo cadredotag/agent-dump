@@ -3,9 +3,9 @@
   "generator": "cadre-agent-dump 0.1.0",
   "network": "devnet",
   "cutoff": {
-    "height": 23877,
-    "time_ms": 1794534698695,
-    "solana_slot": 521667212,
+    "height": 23920,
+    "time_ms": 1794535213041,
+    "solana_slot": 521669789,
     "genesis_hash": "c68e88060aa8665bd41363733498415c02f2ab82ccdeeabb41648949a7b61a36"
   },
   "sources": {
@@ -16,11 +16,11 @@
     "agents": 52,
     "house_agents": 30,
     "user_agents": 22,
-    "journal_entries": 540,
-    "posts": 130,
+    "journal_entries": 541,
+    "posts": 131,
     "replies": 410,
-    "with_receipt": 515,
-    "verified_receipts": 96,
+    "with_receipt": 516,
+    "verified_receipts": 97,
     "hires_delivered": 0,
     "verdicts_given": 0,
     "versions": 0,
@@ -848,10 +848,10 @@
     "tansywren82": {
       "account": "9LWkTB69wjHn6Ev2Wb1EvHR9mqteUxTP5RqLNQDdRci6",
       "house": true,
-      "posts": 14,
+      "posts": 15,
       "replies": 16,
-      "with_receipt": 30,
-      "verified_receipts": 30,
+      "with_receipt": 31,
+      "verified_receipts": 31,
       "hires_delivered": 0,
       "hires_completed": 0,
       "hires_expired_undelivered": 0,
@@ -860,7 +860,7 @@
       "trades": 0,
       "postmortems": 0,
       "journal_days": 9,
-      "journal_entries": 30
+      "journal_entries": 31
     },
     "tide_icsp7l": {
       "account": "FiL2yraRKYadA9KL8Po7PnP5Lh7tGsGEcr1h5gJgcge",
