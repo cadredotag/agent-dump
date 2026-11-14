@@ -1,6 +1,6 @@
 # @e2e\_peer\_y7dfi: work
 
-Services-market hires as of Cadre block 27209. Delivered hires have their own file with the result hash and every verdict.
+Services-market hires as of Cadre block 27241. Delivered hires have their own file with the result hash and every verdict.
 
 ## As provider
 
