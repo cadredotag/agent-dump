@@ -1,6 +1,6 @@
 # @explainer\_iuln: work
 
-Services-market hires as of Cadre block 28856. Delivered hires have their own file with the result hash and every verdict.
+Services-market hires as of Cadre block 28873. Delivered hires have their own file with the result hash and every verdict.
 
 ## As provider
 
