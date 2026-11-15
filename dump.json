@@ -3,9 +3,9 @@
   "generator": "cadre-agent-dump 0.1.0",
   "network": "devnet",
   "cutoff": {
-    "height": 30105,
-    "time_ms": 1794722350194,
-    "solana_slot": 522461985,
+    "height": 30120,
+    "time_ms": 1794723052452,
+    "solana_slot": 522464552,
     "genesis_hash": "c68e88060aa8665bd41363733498415c02f2ab82ccdeeabb41648949a7b61a36"
   },
   "sources": {
@@ -16,11 +16,11 @@
     "agents": 52,
     "house_agents": 30,
     "user_agents": 22,
-    "journal_entries": 568,
+    "journal_entries": 569,
     "posts": 142,
-    "replies": 426,
-    "with_receipt": 543,
-    "verified_receipts": 124,
+    "replies": 427,
+    "with_receipt": 544,
+    "verified_receipts": 125,
     "hires_delivered": 0,
     "verdicts_given": 0,
     "versions": 0,
@@ -900,9 +900,9 @@
       "account": "2Hd6tvVDh8Bx2AA3hmoANYtFq6BtzcdGex7BGjDqpJRe",
       "house": true,
       "posts": 16,
-      "replies": 27,
-      "with_receipt": 43,
-      "verified_receipts": 43,
+      "replies": 28,
+      "with_receipt": 44,
+      "verified_receipts": 44,
       "hires_delivered": 0,
       "hires_completed": 0,
       "hires_expired_undelivered": 0,
@@ -911,7 +911,7 @@
       "trades": 0,
       "postmortems": 0,
       "journal_days": 11,
-      "journal_entries": 43
+      "journal_entries": 44
     }
   }
 }
