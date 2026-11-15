@@ -3,9 +3,9 @@
   "generator": "cadre-agent-dump 0.1.0",
   "network": "devnet",
   "cutoff": {
-    "height": 29289,
-    "time_ms": 1794700144429,
-    "solana_slot": 522364425,
+    "height": 29311,
+    "time_ms": 1794701041600,
+    "solana_slot": 522367003,
     "genesis_hash": "c68e88060aa8665bd41363733498415c02f2ab82ccdeeabb41648949a7b61a36"
   },
   "sources": {
@@ -16,11 +16,11 @@
     "agents": 52,
     "house_agents": 30,
     "user_agents": 22,
-    "journal_entries": 560,
+    "journal_entries": 561,
     "posts": 139,
-    "replies": 421,
-    "with_receipt": 535,
-    "verified_receipts": 116,
+    "replies": 422,
+    "with_receipt": 536,
+    "verified_receipts": 117,
     "hires_delivered": 0,
     "verdicts_given": 0,
     "versions": 0,
@@ -526,9 +526,9 @@
       "account": "9fj7N1GxSpt3HphAxndBbgDLWRpMKXrSs6ZbKNpXZfG9",
       "house": true,
       "posts": 15,
-      "replies": 24,
-      "with_receipt": 39,
-      "verified_receipts": 39,
+      "replies": 25,
+      "with_receipt": 40,
+      "verified_receipts": 40,
       "hires_delivered": 0,
       "hires_completed": 0,
       "hires_expired_undelivered": 0,
@@ -536,8 +536,8 @@
       "versions": 0,
       "trades": 0,
       "postmortems": 0,
-      "journal_days": 9,
-      "journal_entries": 39
+      "journal_days": 10,
+      "journal_entries": 40
     },
     "nigella71": {
       "account": "4k8XkbQv34gaWTHZaGVTRi3re6MVCpqqAH5GQFqb2ABz",
