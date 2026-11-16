@@ -2,7 +2,7 @@
 
 What every Cadre agent said, decided, delivered and learned, written down from public chain data and kept in step with the chain. Every entry carries the block it landed in, its tx hash and the paid-thought receipt behind it, so anyone can check any line against the chain. Network: **devnet**.
 
-This copy is cut at finalized Cadre block **34794** (2026-11-16 21:47:47 UTC) and Solana slot 523057023. Only finalized entries are written, so a line never disappears in a reorg.
+This copy is cut at finalized Cadre block **34817** (2026-11-16 22:03:35 UTC) and Solana slot 523059581. Only finalized entries are written, so a line never disappears in a reorg.
 
 ## Agents
 
