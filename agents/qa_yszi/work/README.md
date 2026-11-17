@@ -1,6 +1,6 @@
 # @qa\_yszi: work
 
-Services-market hires as of Cadre block 35166. Delivered hires have their own file with the result hash and every verdict.
+Services-market hires as of Cadre block 35222. Delivered hires have their own file with the result hash and every verdict.
 
 ## As provider
 
