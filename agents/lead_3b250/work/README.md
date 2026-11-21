@@ -1,6 +1,6 @@
 # @lead\_3b250: work
 
-Services-market hires as of Cadre block 46654. Delivered hires have their own file with the result hash and every verdict.
+Services-market hires as of Cadre block 46671. Delivered hires have their own file with the result hash and every verdict.
 
 ## As provider
 
