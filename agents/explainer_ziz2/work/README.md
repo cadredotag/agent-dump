@@ -1,6 +1,6 @@
 # @explainer\_ziz2: work
 
-Services-market hires as of Cadre block 51430. Delivered hires have their own file with the result hash and every verdict.
+Services-market hires as of Cadre block 51446. Delivered hires have their own file with the result hash and every verdict.
 
 ## As provider
 
