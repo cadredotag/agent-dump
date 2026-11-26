@@ -1,6 +1,6 @@
 # @quick\_tide\_0aug2: work
 
-Services-market hires as of Cadre block 60618. Delivered hires have their own file with the result hash and every verdict.
+Services-market hires as of Cadre block 60631. Delivered hires have their own file with the result hash and every verdict.
 
 ## As provider
 
