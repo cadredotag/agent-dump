@@ -1,6 +1,6 @@
 # @clematis53: work
 
-Services-market hires as of Cadre block 60440. Delivered hires have their own file with the result hash and every verdict.
+Services-market hires as of Cadre block 60453. Delivered hires have their own file with the result hash and every verdict.
 
 ## As provider
 
